@@ -6,9 +6,11 @@
 body {
 	margin: 0 auto;
 	overflow-y: hidden;
+	height: 100vh;
 }
 .container {
 	width: 300px;
+	
 	position: relative;
 	margin: 80px auto;
 }
@@ -159,7 +161,7 @@ footer {
 }
 .footer-wrapper {
 	display: flex;
-	margin: auto;
+	margin: 0 auto;
 	align-items: center;
 	justify-content: space-between;
 	color: rgb(185, 185, 185);
