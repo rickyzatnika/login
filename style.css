@@ -176,24 +176,3 @@ input[type="submit"]:hover {
 	margin: 0 auto;
 }
 
-@media screen and (max-width: 568px) {
-	html {
-		font-size: 80%;
-	}
-	.container {
-		width: 300px;
-	}
-	label {
-		width: 262px;
-	}
-	h1::after {
-		left: 138px;
-	}
-
-	.footer-wrapper {
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 8px;
-	}	
-
-}
