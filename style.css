@@ -9,19 +9,19 @@ body {
 	height: 100vh;
 }
 .container {
-	width: 300px;
-	
+	width: 500px;
+	height: 100%;
 	position: relative;
-	margin: 80px auto;
+	margin: 150px auto;
 }
 form {
 	width: 100%;
-	border: 2px solid black;
+	border: 2px solid #302b63;
 	border-radius: 10px;
 	padding: 60px 0;
 }
 h1 {
-	-webkit-text-stroke: 2px black;
+	-webkit-text-stroke: 2px #302b63;
 	color: white;
 	font-size: 80px;
 	width: 100%;
@@ -42,7 +42,7 @@ h1::after {
 	content: 'g';
 	position: absolute;
 	top: 3px;
-	left: 138px;
+	left: 239px;
 	width: 50px;
 	height: 100px;
 	color: #312949;
@@ -64,7 +64,7 @@ input:active, input:hover, input:focus {
 }
 label {
 	position: absolute;
-	width: 262px;
+	width: 462px;
 	left: 25px;
 	top: 23px;
 	pointer-events: none;
@@ -131,19 +131,28 @@ span:nth-child(8){
 
 input[type="submit"]{
 	color: white;
-	-webkit-text-stroke: 1.5px black;
-	font-size: 35px;
+	-webkit-text-stroke: 0px #302b63;
+	font-size: 25px;
 	background-color: transparent;
 	text-transform: lowercase;
 	cursor: pointer;
-	font-weight: 700;
-	margin: 0;
-	padding: 0;
+	font-weight: bold;
+	text-align: center;
 	width: 100%;
-	margin-top: 50px;
+	border: 2px solid #302b63;
+	width: fit-content;
+	display: flex;
+	margin: 0 auto;
+	padding: .3rem 1rem;
+	margin-top: 30px;
+	border-radius: 10px;
+	transition: .3s linear;
+	background: #2c275e;
 }
 input[type="submit"]:hover {
 	color: #302b63;
+	background: white;
+
 }
 
 .footer {
@@ -176,6 +185,19 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 568px) {
+	html {
+		font-size: 80%;
+	}
+	.container {
+		width: 300px;
+	}
+	label {
+		width: 262px;
+	}
+	h1::after {
+		left: 138px;
+	}
+
 	.footer-wrapper {
 		flex-wrap: wrap;
 		justify-content: center;
