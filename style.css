@@ -4,8 +4,10 @@
 	box-sizing: border-box;
 }
 body {
-	max-width: 100%;
+	width: 100%;
 	overflow-x: hidden;
+	margin: 0 auto;
+
 }
 .container {
 	width: 500px;
@@ -176,3 +178,9 @@ input[type="submit"]:hover {
 	margin: 0 auto;
 }
 
+@media screen and (max-width: 568px) {
+	.container {
+		margin: 180px auto 50px auto;
+		padding: 0 6%;
+	}
+}
