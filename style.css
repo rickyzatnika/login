@@ -143,3 +143,45 @@ input[type="submit"]{
 input[type="submit"]:hover {
 	color: #302b63;
 }
+
+footer {
+	width: 100%;
+	padding: 10px 2%;
+	align-items: center;
+	display: flex;
+	background: #0f0c29;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	overflow-x: hidden;
+}
+.footer-wrapper {
+	display: flex;
+	margin: auto;
+	align-items: center;
+	justify-content: space-between;
+	color: rgb(185, 185, 185);
+	text-align: center;
+	position: relative;
+	gap: 5rem;
+}
+.footer-wrapper p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+}
+
+@media screen and (max-width: 568px) {
+	footer {
+		display: block;
+	}
+	.footer-wrapper  {
+		display: block;
+		
+	}
+	.footer-wrapper p {
+		line-height: 25px;
+	}
+
+}
